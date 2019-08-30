@@ -13,7 +13,7 @@
   "engines": {
     "npm": "6.11.2",
     "node": "10.16.3"
-  },
+ },
   "dependencies": {
     "@angular/common": "~8.1.2",
     "@angular/compiler": "~8.1.2",
