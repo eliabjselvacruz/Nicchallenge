@@ -38,12 +38,12 @@ export class AppComponent {
     },
     {
       title: 'FeedBack',
-      url: '/list',
+      url: '/#',
       icon: 'chatbubbles'
     },
     {
       title: 'Acerca de Nosotros',
-      url: '/list',
+      url: '/aboutus',
       icon: 'at'
     },
   ];
