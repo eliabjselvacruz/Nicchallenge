@@ -48,11 +48,11 @@
           <ion-icon name="arrow-dropup"></ion-icon>
         </ion-fab-button>
         <ion-fab-list side="top">
-          <ion-fab-button><ion-icon name="contact"></ion-icon></ion-fab-button>
-          <ion-fab-button><ion-icon name="trophy"></ion-icon></ion-fab-button>
-          <ion-fab-button><ion-icon name="flash"></ion-icon></ion-fab-button>
+          <ion-fab-button (click)="goProfile()"><ion-icon name="contact"></ion-icon></ion-fab-button>
+          <ion-fab-button (click)="goleaderBoard()"><ion-icon name="trophy"></ion-icon></ion-fab-button>
+          <ion-fab-button (click)="goChallenges()"><ion-icon name="flash"></ion-icon></ion-fab-button>
         </ion-fab-list>
-      </ion-fab>
+      </ion-fab> 
   
 
 </ion-content>

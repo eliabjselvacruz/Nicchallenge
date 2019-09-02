@@ -18,32 +18,32 @@ export class AppComponent {
     },
     {
       title: 'Perfil',
-      url: '/list',
+      url: '/profile',
       icon: 'contact'
     },
     {
       title: 'Challenges',
-      url: '/list',
+      url: '/challenges',
       icon: 'flash'
     },
     {
       title: 'Tabla de Posiciones',
-      url: '/list',
+      url: '/leaderboard',
       icon: 'trophy'
     },
     {
       title: 'Patrocinadores',
-      url: '/list',
+      url: '/sponsors',
       icon: 'contacts'
     },
     {
       title: 'FeedBack',
-      url: '/list',
+      url: '/#',
       icon: 'chatbubbles'
     },
     {
       title: 'Acerca de Nosotros',
-      url: '/list',
+      url: '/aboutus',
       icon: 'at'
     },
   ];
