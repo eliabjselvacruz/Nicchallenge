@@ -38,7 +38,7 @@ export class AppComponent {
     },
     {
       title: 'FeedBack',
-      url: '/#',
+      url: '/feedback',
       icon: 'chatbubbles'
     },
     {
