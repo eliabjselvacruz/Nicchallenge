@@ -14,7 +14,8 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
-  },  { path: 'profile', loadChildren: './profile/profile.module#ProfilePageModule' },
+  },
+  { path: 'profile', loadChildren: './profile/profile.module#ProfilePageModule' },
   { path: 'challenges', loadChildren: './challenges/challenges.module#ChallengesPageModule' },
   { path: 'leaderboard', loadChildren: './leaderboard/leaderboard.module#LeaderboardPageModule' },
   { path: 'sponsors', loadChildren: './sponsors/sponsors.module#SponsorsPageModule' },
