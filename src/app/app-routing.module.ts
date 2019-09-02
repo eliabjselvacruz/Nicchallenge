@@ -18,7 +18,8 @@ const routes: Routes = [
   { path: 'challenges', loadChildren: './challenges/challenges.module#ChallengesPageModule' },
   { path: 'leaderboard', loadChildren: './leaderboard/leaderboard.module#LeaderboardPageModule' },
   { path: 'sponsors', loadChildren: './sponsors/sponsors.module#SponsorsPageModule' },
-  { path: 'aboutus', loadChildren: './aboutus/aboutus.module#AboutusPageModule' }
+  { path: 'aboutus', loadChildren: './aboutus/aboutus.module#AboutusPageModule' },
+  { path: 'feedback', loadChildren: './feedback/feedback.module#FeedbackPageModule' }
 
 ];
 
