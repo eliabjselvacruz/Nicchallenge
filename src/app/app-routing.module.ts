@@ -14,15 +14,6 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
-<<<<<<< HEAD
-  },  { path: 'profile', loadChildren: './profile/profile.module#ProfilePageModule' },
-  { path: 'challenges', loadChildren: './challenges/challenges.module#ChallengesPageModule' },
-  { path: 'leaderboard', loadChildren: './leaderboard/leaderboard.module#LeaderboardPageModule' },
-  { path: 'sponsors', loadChildren: './sponsors/sponsors.module#SponsorsPageModule' },
-  { path: 'aboutus', loadChildren: './aboutus/aboutus.module#AboutusPageModule' },
-  { path: 'feedback', loadChildren: './feedback/feedback.module#FeedbackPageModule' }
-
-=======
   },
   { path: 'profile', loadChildren: './profile/profile.module#ProfilePageModule' },
   { path: 'challenges', loadChildren: './challenges/challenges.module#ChallengesPageModule' },
@@ -30,7 +21,6 @@ const routes: Routes = [
   { path: 'sponsors', loadChildren: './sponsors/sponsors.module#SponsorsPageModule' },
   { path: 'aboutus', loadChildren: './aboutus/aboutus.module#AboutusPageModule' }
 
->>>>>>> 34c9e0d775eb49c99629490d3c8e0a8aa6748493
 ];
 
 @NgModule({
