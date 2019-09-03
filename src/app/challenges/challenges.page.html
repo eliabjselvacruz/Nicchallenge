@@ -1,9 +1,21 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>challenges</ion-title>
+    <ion-title>Challenges</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+<!-- fab placed to the bottom start -->
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button>
+    <ion-icon name="arrow-dropup"></ion-icon>
+  </ion-fab-button>
+  <ion-fab-list side="top">
+    <ion-fab-button (click)="goProfile()"><ion-icon name="contact"></ion-icon></ion-fab-button>
+    <ion-fab-button (click)="goleaderBoard()"><ion-icon name="trophy"></ion-icon></ion-fab-button>
+    <ion-fab-button (click)="goChallenges()"><ion-icon name="flash"></ion-icon></ion-fab-button>
+  </ion-fab-list>
+</ion-fab> 
 
 </ion-content>
