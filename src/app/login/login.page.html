@@ -8,14 +8,15 @@
           <form action="" class="center">
             <ion-item class="user">
               <ion-label position="floating" >Usuario</ion-label>
-              <ion-input></ion-input>
+              <ion-input [(ngModel)]="email" name="email"></ion-input>
             </ion-item>
             <ion-item class="user">
               <ion-label position="floating">Contraseña</ion-label>
-              <ion-input type="password"></ion-input>
+              <ion-input [(ngModel)]="password" type="password" name="password"></ion-input>
             </ion-item>
           </form>
-          <ion-button class="button">Registrarse</ion-button>
+          <ion-button (click)="OnSubmitLogin()" class="button">Registrarse</ion-button>
+          <br/>
         </ion-card-content>
       </ion-card>
 
