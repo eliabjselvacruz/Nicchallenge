@@ -5,18 +5,17 @@
           <ion-card-title class="header">Iniciar Sesión</ion-card-title>
         </ion-card-header>
         <ion-card-content>
-          <form action="" class="center">
-            <ion-item class="user">
+            <form action="user" class="">
+            <ion-item class="">
               <ion-label position="floating" >Usuario</ion-label>
-              <ion-input [(ngModel)]="email" name="email"></ion-input>
+              <ion-input type="email" [(ngModel)]="email" name="email"></ion-input>
             </ion-item>
-            <ion-item class="user">
+            <ion-item class="">
               <ion-label position="floating">Contraseña</ion-label>
               <ion-input [(ngModel)]="password" type="password" name="password"></ion-input>
             </ion-item>
           </form>
           <ion-button (click)="OnSubmitLogin()" class="button">Registrarse</ion-button>
-          <br/>
         </ion-card-content>
       </ion-card>
 
