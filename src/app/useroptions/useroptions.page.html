@@ -2,12 +2,12 @@
 
     <ion-tabs>
       <ion-tab-bar slot="top">
-        <ion-tab-button tab="login" href="#Eliab">
+        <ion-tab-button id="tabLogin"  (click)="click('1')">
           <ion-icon name="contact"></ion-icon>
           <ion-label>Iniciar Sesión</ion-label>
         </ion-tab-button>
     
-        <ion-tab-button tab="signup">
+        <ion-tab-button id="tabSignup" (click)="click('2')">
           <ion-icon name="person-add"></ion-icon>
           <ion-label>Registrarse</ion-label>
         </ion-tab-button>
@@ -15,7 +15,7 @@
 
     </ion-tabs>
 
-    <ion-card class="card">
+    <ion-card id="section" class="card">
       <ion-card-header>
         <ion-card-title>Iniciar Sesión</ion-card-title>
         <ion-card-subtitle>Ingrese sus datos</ion-card-subtitle>
@@ -36,11 +36,11 @@
             <ion-button (click)="OnSubmitLogin()" class="button">Ingresar</ion-button>
           </ion-card-content>
         </ion-card>
-      </ion-card-content>
+      </ion-card-content> 
     </ion-card>
 
-    <ion-card class="card">
-      <ion-card-header>
+    <!-- <ion-card class="card"> -->
+      <!-- <ion-card-header>
         <ion-card-title>Registrarse</ion-card-title>
         <ion-card-subtitle>Ingrese sus datos para registrarse</ion-card-subtitle>
       </ion-card-header>
@@ -84,9 +84,7 @@
               <ion-button class="button">Registrarse</ion-button>
             </ion-card-content>
           </ion-card>
-        </ion-card-content>
-    </ion-card>
-
+        </ion-card-content> -->
     
 
 
