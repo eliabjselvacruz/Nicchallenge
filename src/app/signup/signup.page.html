@@ -1,48 +1,52 @@
 
 
 <ion-content>
-
-    <ion-card>
-        <ion-card-header>
-          <ion-card-title>Registrarse</ion-card-title>
-        </ion-card-header>
+  <ion-card class="card">
+    <ion-card-header>
+      <ion-card-title>Registrarse</ion-card-title>
+      <ion-card-subtitle>Ingrese sus datos para registrarse</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-card>
         <ion-card-content>
-          <form action="">
-            <ion-item>
-              <ion-label position="floating">Nombre</ion-label>
-              <ion-input></ion-input>
+          <form action="" class="center">
+            <ion-item class="">
+              <ion-label position="floating" >Nombre</ion-label>
+              <ion-input  name="userName"></ion-input>
             </ion-item>
-            <ion-item>
-              <ion-label position="floating">Apellidos</ion-label>
-              <ion-input></ion-input>
+            <ion-item class="">
+              <ion-label position="floating" >Apellido</ion-label>
+              <ion-input  name="userSurname"></ion-input>
             </ion-item>
-            <ion-item>
-              <ion-label position="floating"></ion-label>Edad</ion-label>
-              <ion-input type="number"></ion-input>
+            <ion-item class="">
+              <ion-label position="floating" >Edad</ion-label>
+              <ion-input  type="number" name="userAge" min=0 ></ion-input>
             </ion-item>
-            <ion-item>
-              <ion-label position="floating">Correo</ion-label>
-              <ion-input type="email"></ion-input>
+            <ion-item class="">
+              <ion-label position="floating" >Correo</ion-label>
+              <ion-input  type="email" name="userEmail"></ion-input>
             </ion-item>
-            <ion-item>
-              <ion-label position="floating">País</ion-label>
-              <ion-input></ion-input>
+            <ion-item class="">
+              <ion-label position="floating" >País</ion-label>
+              <ion-input  name="userCountry"></ion-input>
             </ion-item>
-            <ion-item>
-              <ion-label position="floating">Departamento</ion-label>
-              <ion-input></ion-input>
+            <ion-item class="">
+              <ion-label position="floating" >Departamento</ion-label>
+              <ion-input  name="userDepart"></ion-input>
             </ion-item>
-            <ion-item>
-              <ion-label position="floating">Municipio</ion-label>
-              <ion-input></ion-input>
+            <ion-item class="user">
+              <ion-label position="floating">Contraseña</ion-label>
+              <ion-input type="password" name="userPassword"></ion-input>
             </ion-item>
-            <ion-item>
-                <ion-label position="floating">Teléfono</ion-label>
-                <ion-input type="tel"></ion-input>
+            <ion-item class="user">
+              <ion-label position="floating">Confirmar Contraseña</ion-label>
+              <ion-input type="password" name="userPassword2"></ion-input>
             </ion-item>
-              
           </form>
+          <ion-button style="margin-bottom: 10px; margin-top: 30px" class="button">Registrarse</ion-button>
         </ion-card-content>
       </ion-card>
+    </ion-card-content>
+  </ion-card>
 
 </ion-content>

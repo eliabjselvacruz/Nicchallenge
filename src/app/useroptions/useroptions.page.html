@@ -1,91 +1,18 @@
 <ion-content>
 
-    <ion-tabs>
-      <ion-tab-bar slot="top">
-        <ion-tab-button id="tabLogin"  (click)="click('1')">
-          <ion-icon name="contact"></ion-icon>
-          <ion-label>Iniciar Sesión</ion-label>
-        </ion-tab-button>
-    
-        <ion-tab-button id="tabSignup" (click)="click('2')">
-          <ion-icon name="person-add"></ion-icon>
-          <ion-label>Registrarse</ion-label>
-        </ion-tab-button>
-      </ion-tab-bar>
-
-    </ion-tabs>
-
-    <ion-card id="section" class="card">
-      <ion-card-header>
-        <ion-card-title>Iniciar Sesión</ion-card-title>
-        <ion-card-subtitle>Ingrese sus datos</ion-card-subtitle>
-      </ion-card-header>
-      <ion-card-content>
-        <ion-card>
-          <ion-card-content>
-            <form action="user" class="center">
-              <ion-item class="">
-                <ion-label position="floating" >Usuario</ion-label>
-                <ion-input type="email" [(ngModel)]="email" name="email"></ion-input>
-              </ion-item>
-              <ion-item class="user">
-                <ion-label position="floating">Contraseña</ion-label>
-                <ion-input [(ngModel)]="password" type="password" name="password"></ion-input>
-              </ion-item>
-            </form>
-            <ion-button (click)="OnSubmitLogin()" class="button">Ingresar</ion-button>
-          </ion-card-content>
-        </ion-card>
-      </ion-card-content> 
-    </ion-card>
-
-    <!-- <ion-card class="card"> -->
-      <!-- <ion-card-header>
-        <ion-card-title>Registrarse</ion-card-title>
-        <ion-card-subtitle>Ingrese sus datos para registrarse</ion-card-subtitle>
-      </ion-card-header>
+  <ion-card class="card">
+    <ion-card-header>
+      <ion-card-title>Nicchallenge</ion-card-title>
+      <ion-card-subtitle>Elija una opción para acceder y disfrutar de los mejores retos turísticos...</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-card>
         <ion-card-content>
-          <ion-card>
-            <ion-card-content>
-              <form action="" class="center">
-                <ion-item class="">
-                  <ion-label position="floating" >Nombre</ion-label>
-                  <ion-input  name="userName"></ion-input>
-                </ion-item>
-                <ion-item class="">
-                  <ion-label position="floating" >Apellido</ion-label>
-                  <ion-input  name="userSurname"></ion-input>
-                </ion-item>
-                <ion-item class="">
-                  <ion-label position="floating" >Edad</ion-label>
-                  <ion-input  type="number" name="userAge" min=0 ></ion-input>
-                </ion-item>
-                <ion-item class="">
-                  <ion-label position="floating" >Correo</ion-label>
-                  <ion-input  type="email" name="userEmail"></ion-input>
-                </ion-item>
-                <ion-item class="">
-                  <ion-label position="floating" >País</ion-label>
-                  <ion-input  name="userCountry"></ion-input>
-                </ion-item>
-                <ion-item class="">
-                  <ion-label position="floating" >Departamento</ion-label>
-                  <ion-input  name="userDepart"></ion-input>
-                </ion-item>
-                <ion-item class="user">
-                  <ion-label position="floating">Contraseña</ion-label>
-                  <ion-input type="password" name="userPassword"></ion-input>
-                </ion-item>
-                <ion-item class="user">
-                  <ion-label position="floating">Confirmar Contraseña</ion-label>
-                  <ion-input type="password" name="userPassword2"></ion-input>
-                </ion-item>
-              </form>
-              <ion-button class="button">Registrarse</ion-button>
-            </ion-card-content>
-          </ion-card>
-        </ion-card-content> -->
-    
-
+          <ion-button (click)="goLogin()" class="button">Iniciar Sesión</ion-button>
+          <ion-button (click)="goSignup()" class="button">Registrarse</ion-button>
+        </ion-card-content>
+      </ion-card>
+    </ion-card-content>
+  </ion-card>
 
 </ion-content>
