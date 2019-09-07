@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-feedback',
@@ -7,7 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeedbackPage implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
+
+
+  goProfile(){
+    this.router.navigate(['/profile']);
+  }  
+  goleaderBoard(){
+    this.router.navigate(['/leaderboard']);
+  }
+  goChallenges(){
+    this.router.navigate(['/challenges']);
+  }
 
   ngOnInit() {
   }

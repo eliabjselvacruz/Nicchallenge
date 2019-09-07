@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-leaderboard',
@@ -7,7 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LeaderboardPage implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
+
+  goProfile(){
+    this.router.navigate(['/profile']);
+  }  
+  goChallenges(){
+    this.router.navigate(['/challenges']);
+  }
 
   ngOnInit() {
   }
