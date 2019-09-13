@@ -18,6 +18,10 @@ export class ChallengesPage implements OnInit {
     this.router.navigate(['/leaderboard']);
   }
 
+  back(){
+    this.router.navigate(['/home']);
+  }
+
   ngOnInit() {
   }
 

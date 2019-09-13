@@ -19,7 +19,11 @@ export class SponsorsPage implements OnInit {
   goChallenges(){
     this.router.navigate(['/challenges']);
   }
-  
+
+  back(){
+    this.router.navigate(['/home']);
+  }
+    
   ngOnInit() {
   }
 

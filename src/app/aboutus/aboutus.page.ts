@@ -10,8 +10,6 @@ export class AboutusPage implements OnInit {
 
   constructor(private router:Router) { }
 
-
-
   goProfile(){
     this.router.navigate(['/profile']);
   }  
@@ -21,6 +19,11 @@ export class AboutusPage implements OnInit {
   goChallenges(){
     this.router.navigate(['/challenges']);
   }
+
+  back(){
+    this.router.navigate(['/home']);
+  }
+
   ngOnInit() {
   }
 

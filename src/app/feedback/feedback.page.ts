@@ -21,6 +21,10 @@ export class FeedbackPage implements OnInit {
     this.router.navigate(['/challenges']);
   }
 
+  back(){
+    this.router.navigate(['/home']);
+  }
+
   ngOnInit() {
   }
 

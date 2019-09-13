@@ -1,12 +1,32 @@
 <ion-header>
   <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button (click)='back()'><ion-icon name="arrow-back"></ion-icon></ion-button>
+      </ion-buttons>
     <ion-title>Perfil</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
-  <!-- fab placed to the bottom start -->
+  <ion-tabs>
+    <ion-tab-bar slot="top">
+      <ion-tab-button tab="tab1">
+        <ion-icon name="calendar"></ion-icon>
+        <ion-label>Calendario</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="tab2">
+        <ion-icon name="calendar"></ion-icon>
+        <ion-label>Calendario</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="challenges">
+        <ion-icon name="calendar"></ion-icon>
+        <ion-label>Calendario</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+
+
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button>
       <ion-icon name="arrow-dropup"></ion-icon>

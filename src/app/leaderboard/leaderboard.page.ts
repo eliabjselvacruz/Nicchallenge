@@ -17,6 +17,10 @@ export class LeaderboardPage implements OnInit {
     this.router.navigate(['/challenges']);
   }
 
+  back(){
+    this.router.navigate(['/home']);
+  }
+
   ngOnInit() {
   }
 
