@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
       <ion-buttons slot="start">
         <ion-button (click)='back()'><ion-icon name="arrow-back"></ion-icon></ion-button>
       </ion-buttons>
@@ -8,24 +8,66 @@
 </ion-header>
 
 <ion-content>
-
-  <ion-tabs>
-    <ion-tab-bar slot="top">
-      <ion-tab-button tab="tab1">
-        <ion-icon name="calendar"></ion-icon>
-        <ion-label>Calendario</ion-label>
-      </ion-tab-button>
-      <ion-tab-button tab="tab2">
-        <ion-icon name="calendar"></ion-icon>
-        <ion-label>Calendario</ion-label>
-      </ion-tab-button>
-      <ion-tab-button tab="challenges">
-        <ion-icon name="calendar"></ion-icon>
-        <ion-label>Calendario</ion-label>
-      </ion-tab-button>
-    </ion-tab-bar>
-  </ion-tabs>
-
+  <ion-card>
+    <ion-card-content>
+      <ion-card class="centerText">
+        <ion-card-header class="user-photo">
+          <ion-avatar class="photo">
+            <img src="https://www.pngarts.com/files/3/Avatar-Transparent-Image.png">
+          </ion-avatar>
+          <ion-card-title>Eliab Javier Selva Cruz</ion-card-title>
+          <ion-card-subtitle>eliabjselvacruz51@gmail.com</ion-card-subtitle>
+        </ion-card-header>
+      </ion-card>
+      <ion-list>
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="https://image.flaticon.com/icons/svg/149/149071.svg">
+          </ion-avatar>
+          <ion-label>
+            <h5 class="colorGray">Nombre:</h5>
+            <h2>Eliab Javier</h2>
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="https://image.flaticon.com/icons/svg/149/149071.svg">
+          </ion-avatar>
+          <ion-label>
+            <h5 class="colorGray">Apellido:</h5>
+            <h2>Selva Cruz</h2>
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="https://image.flaticon.com/icons/svg/149/149071.svg">
+          </ion-avatar>
+          <ion-label>
+            <h5 class="colorGray">Correo:</h5>
+            <h2>eliabjselvacruz51@gmail.com</h2>
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="https://image.flaticon.com/icons/svg/149/149071.svg">
+          </ion-avatar>
+          <ion-label>
+            <h5 class="colorGray">Departamento:</h5>
+            <h2>Chontales</h2>
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="https://image.flaticon.com/icons/svg/149/149071.svg">
+          </ion-avatar>
+          <ion-label>
+            <h5 class="colorGray">Municipio:</h5>
+            <h2>Juigalpa</h2>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
 
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button>
