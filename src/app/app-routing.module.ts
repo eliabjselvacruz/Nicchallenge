@@ -28,7 +28,8 @@ const routes: Routes = [
   { path: 'feedback', loadChildren: './feedback/feedback.module#FeedbackPageModule'/*, canActivate : [AuthGuard]*/ },
   { path: 'login', loadChildren: './login/login.module#LoginPageModule'/*, canActivate : [AuthGuard]*/ },
   { path: 'signup', loadChildren: './signup/signup.module#SignupPageModule'/*, canActivate : [AuthGuard]*/},
-  { path: 'useroptions', loadChildren: './useroptions/useroptions.module#UseroptionsPageModule'/*, canActivate : [AuthGuard]*/ }
+  { path: 'useroptions', loadChildren: './useroptions/useroptions.module#UseroptionsPageModule'/*, canActivate : [AuthGuard]*/ },  { path: 'editprofile', loadChildren: './editprofile/editprofile.module#EditprofilePageModule' }
+
 
 
 
