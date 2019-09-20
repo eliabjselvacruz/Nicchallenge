@@ -18,6 +18,17 @@
           <ion-card-title>Eliab Javier Selva Cruz</ion-card-title>
           <ion-card-subtitle>eliabjselvacruz51@gmail.com</ion-card-subtitle>
         </ion-card-header>
+        <ion-card-content class="size">
+          <ion-fab vertical="center" horizontal="center">
+            <ion-fab-button size="small"><ion-icon name="logo-buffer"></ion-icon></ion-fab-button>
+            <ion-fab-list side="start">
+              <ion-fab-button (click)='goEditProfile()'><ion-icon name="create"></ion-icon></ion-fab-button>
+            </ion-fab-list>
+            <ion-fab-list side="end">
+              <ion-fab-button><ion-icon name="stats"></ion-icon></ion-fab-button>
+            </ion-fab-list>
+          </ion-fab>
+        </ion-card-content>
       </ion-card>
       <ion-list>
         <ion-item>
