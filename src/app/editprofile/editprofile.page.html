@@ -10,23 +10,38 @@
 
   <ion-card id="section" class="card">
     <ion-card-header>
-      <ion-card-title>Editar Información del Perfil</ion-card-title>
-      <ion-card-subtitle>Ingrese sus datos</ion-card-subtitle>
+      <ion-card-title>Editando Información del Perfil</ion-card-title>
     </ion-card-header>
     <ion-card-content>
       <ion-card>
         <ion-card-content>
           <form action="user" class="center">
             <ion-item class="">
-              <ion-label position="floating" >Usuario</ion-label>
-              <ion-input type="email" [(ngModel)]="email" name="email"></ion-input>
+              <ion-label position="floating" >Nombre</ion-label>
+              <ion-input ></ion-input>
+            </ion-item>
+            <ion-item class="">
+              <ion-label position="floating" >Apellido</ion-label>
+              <ion-input ></ion-input>
+            </ion-item>
+            <ion-item class="">
+              <ion-label position="floating" >Departamento</ion-label>
+              <ion-input ></ion-input>
+            </ion-item>
+            <ion-item class="">
+              <ion-label position="floating" >Municipio</ion-label>
+              <ion-input ></ion-input>
             </ion-item>
             <ion-item class="user">
-              <ion-label position="floating">Contraseña</ion-label>
-              <ion-input [(ngModel)]="password" type="password" name="password"></ion-input>
+              <ion-label position="floating">Contraseña actual</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+            <ion-item class="">
+              <ion-label position="floating" >Nueva Contraseña</ion-label>
+              <ion-input ></ion-input>
             </ion-item>
           </form>
-          <ion-button (click)="OnSubmitLogin()" class="button">Ingresar</ion-button>
+          <ion-button (click)="OnSubmitLogin()" class="buttonupdate">Actualizar Datos</ion-button>
         </ion-card-content>
       </ion-card>
     </ion-card-content>
