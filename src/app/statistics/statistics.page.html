@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-button (click)='back()'><ion-icon name="arrow-back"></ion-icon></ion-button>
+      </ion-buttons>
+    <ion-title>Mis Estadísticas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-card class="centerText space">
+              <ion-card-content class="size">
+                <ion-text color="primary">
+                  <p class="fontSize">51</p>
+                </ion-text>
+                <ion-text>
+                  <h2>Retos Completados</h2>
+                </ion-text>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+          <ion-col>
+            <ion-card class="centerText space">
+              <ion-card-content class="size">
+                <ion-text color="primary">
+                  <p class="fontSize">12</p>
+                </ion-text>
+                <ion-text>
+                  <h2>Retos Pendientes</h2>
+                </ion-text>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
